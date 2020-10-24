@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BMI Calculator</title>
+
+  <!-- Bootstrap Styles and scripts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- CSS Style Sheets -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- BMI Calculator Java Script -->
+  <script src="js/bmiCalculator.js"></script>
+
+</head>
+
+<body>
+
+    <section id="one">
+        <div class=" banner container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1> Welcome to BMI Calculator</h1>
+                <h2> Let's calculate your BMI </h2> 
+              </div>
+          </div>
+    </section>
+
+    <section id="two">
+        <div class=" weightbox container">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <form>
+                    <div class="form-group">
+                      <label for="weightInput" class="labelInputs" >Enter your weight in killograms: </label>
+                      <input type="number" class="form-control" id="weightInput" aria-describedby="weightHelp" placeholder="Weight in Kg">
+                      <small id="weightHelp" class="form-text text-muted">It's mandatory that you enter your weight in killograms otherwise calculations will fail</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="heightInput" class="labelInputs" >Enter your height in centimeters: </label>
+                        <input type="number" class="form-control" id="heightInput" aria-describedby="heightHelp" placeholder="Height in cm">
+                        <small id="heightHelp" class="form-text text-muted">It's mandatory that you enter your weight in centimeters otherwise calculations will fail</small>
+                      </div>
+                    <button type="button" class=" calcbtn btn btn-primary" onclick="bmiCalc(document.getElementById('weightInput').value,document.getElementById('heightInput').value)">Calculate My BMI</button>
+                    
+                  </form>
+              </div>
+              <div class=" result col-lg-6 col-sm-12">
+                <h1 id="yourbmi" ></h1>                   
+              </div>
+            </div>
+          </div>
+    </section>
+
+</body>

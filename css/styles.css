@@ -1,0 +1,42 @@
+h1 {
+    font-family: Ubuntu;
+    font-weight: bolder;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #ffaaa5;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-weight: bolder;
+    line-height: 5rem;
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    background-color: #a8e6cf;
+    padding: 3% 3%;
+}
+
+.weightbox {
+    padding: 3% 1%;
+    font-family: Montserrat;
+    background-color: #dcedc1;
+}
+
+.labelInputs {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: blue;
+}
+
+.result {
+    text-align: center;
+    padding-top: 10%;
+    /* padding: 5%; */
+}
+
+.calcbtn {
+    margin: 0% 35%;
+}
