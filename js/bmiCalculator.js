@@ -1,8 +1,9 @@
 bmiCalc(weight, height);
 
 function bmiCalc(weight, height){
-    var bmi = weight / (height*height);
+    var heightMeters = height / 100;
+    var bmi = weight / (heightMeters*heightMeters);
     console.log(bmi);
-    document.getElementById("yourbmi").innerHTML = "Your BMI is: " + "<em>" + bmi + "</em>";
+    document.getElementById("yourbmi").innerHTML = bmi.toFixed(1);
 }
 

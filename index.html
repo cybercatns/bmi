@@ -38,24 +38,39 @@
     <section id="two">
         <div class=" weightbox container">
             <div class="row">
-              <div class="col-lg-6 col-sm-12">
+              <div class="col-lg-4 col-sm-12">
                 <form>
                     <div class="form-group">
-                      <label for="weightInput" class="labelInputs" >Enter your weight in killograms: </label>
+                      <label for="weightInput" class="labelInputs" >Weight in killograms: </label>
                       <input type="number" class="form-control" id="weightInput" aria-describedby="weightHelp" placeholder="Weight in Kg">
                       <small id="weightHelp" class="form-text text-muted">It's mandatory that you enter your weight in killograms otherwise calculations will fail</small>
                     </div>
                     <div class="form-group">
-                        <label for="heightInput" class="labelInputs" >Enter your height in centimeters: </label>
+                        <label for="heightInput" class="labelInputs" >Height in centimeters: </label>
                         <input type="number" class="form-control" id="heightInput" aria-describedby="heightHelp" placeholder="Height in cm">
                         <small id="heightHelp" class="form-text text-muted">It's mandatory that you enter your weight in centimeters otherwise calculations will fail</small>
                       </div>
                     <button type="button" class=" calcbtn btn btn-primary" onclick="bmiCalc(document.getElementById('weightInput').value,document.getElementById('heightInput').value)">Calculate My BMI</button>
-                    
-                  </form>
+                </form>
               </div>
-              <div class=" result col-lg-6 col-sm-12">
-                <h1 id="yourbmi" ></h1>                   
+              <div class=" result col-lg-4 col-sm-12">
+                <h2 id="yourbmi" ></h2>                   
+              </div>
+              <div class=" legend col-lg-4 col-sm-12">
+                <h1 id="yourbmi" ></h1> 
+                <h3>BMI Categories:</h3>
+                <div class="alert alert-secondary" role="alert">
+                    Underweight: <em> < 18.5 </em>
+                </div>
+                <div class="alert alert-success" role="alert">
+                    Normal weight: <em>18.5–24.9</em>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    Overweight: <em>25–29.9</em>
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    Obesity: <em>BMI of 30 or greater</em>
+                </div>                  
               </div>
             </div>
           </div>
